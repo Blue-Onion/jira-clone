@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
           {/* Move ThemeProvider inside body */}
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <Navbar />
-            <main className="min-h-screen mb-10">{children}</main>
+            <main className="min-h-screen mt-40">{children}</main>
             <Toaster richColors />
 
             <footer className="bg-gray-900 py-10">
