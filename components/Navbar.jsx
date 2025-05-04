@@ -14,7 +14,7 @@ const Navbar = () => {
       <nav className="flex h-16 items-center justify-between">
         <Link href="/">
           <Image
-            src={"/logo2.png"}
+            src={"/logo.png"}
             alt="logo"
             width={200}
             height={56}
@@ -24,7 +24,7 @@ const Navbar = () => {
         </Link>
         <div className=" flex gap-4">
           <Link href={"/project/create"}>
-            <Button variant={"destructive"}>
+            <Button variant={""}>
               <span className="flex items-center">
                 <PenBox className="h-4 w-4 mr-2" />
                 Create Project

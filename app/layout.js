@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { dark, shadesOfPurple } from "@clerk/themes";
+import Aurora from "@/components/Aurora";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,9 @@ export default function RootLayout({ children }) {
         <body className={inter.className}>
           {/* Move ThemeProvider inside body */}
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <div className="fixed inset-0 -z-10 pointer-events-none">
+            <Aurora />
+          </div>
             <Navbar />
             <main className="min-h-screen mt-40">{children}</main>
             <Toaster richColors />
